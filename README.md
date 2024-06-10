@@ -1,4 +1,4 @@
-## Hi there 👋
+[Personal Portfolio Website 👤❤️](https://omkaripte.github.io/omkaripte/)
 
 <!--
 **omkaripte/omkaripte** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
