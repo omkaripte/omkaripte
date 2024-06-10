@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="icon" type="png" href="Images/user-3296.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ---------External JavaScript------- -->
+    <script src="script.js"></script> 
+
+    <!-- ---For Send Button of Form-- -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+
+    <!-- --------For all acons---------- -->
+    <script src="https://kit.fontawesome.com/8ce0bceac7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="menu fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="menu fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="headertext">
+
+                <span id="element"></span>
+
+                <h1>Hi, I'm <span>Omkar.</span></h1>
+                <h2>From Pune, Maharashtra.</h2>
+            </div>
+            <a target="_blank" href="Images/Resume.pdf" readonly class="btn">Open Resume</a>
+        </div>
+    </div>
+
+
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Ability to create innovative, creative and interactive 
+                        web designs to boost customer engagement.Sound knowledge in 
+                        HTML5, CSS, JavaScript and other UI framework.
+                        Build reusable code for future use while optimising web performance.</p>
+
+                    <div class="tabtitles">
+                        <p class="tablinks activelink" onclick="opentab('technicalskills')">Technical Skills</p>
+                        <p class="tablinks" onclick="opentab('education')">Education</p>
+                        <p class="tablinks" onclick="opentab('skills')">Skills</p>
+                    </div>
+
+                    <div class="tabcontents avtivetab" id="technicalskills">
+                        <ul>
+                            <li><span>HTML</span><br>Structuring the web pages.</li>
+                            <li><span>CSS</span><br>Styling and designing the web pages.</li>
+                            <li><span>JavaScript</span><br>Developing and building web applications.</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Msc(Computer Science) at Savitribai Phule Pune University.<br>Grade -75%</li>
+                            <li><span>2021</span><br>Bsc(Computer Science) at Savitribai Phule Pune University.<br>Grade -78%</li>
+                            <li><span>2018</span><br>Class XII<br>Grade -62%</li>
+                            <li><span>2016</span><br>Class X<br>Grade -82%</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tabcontents" id="skills">
+                        <ul>
+                            <li>Graphic Designing</li>
+                            <li>Photoshop</li>
+                            <li>Creativity</li>
+                            <li>Team Building</li>
+                            <li>Collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project">
+        <div class="container">
+            <h1 class="subtitle">My Projects</h1>
+            <div class="prject-list">
+            <div>
+                <i class="fa-solid fa-calculator"></i>
+                <h2>Calculator</h2>
+                <p>A calculator is a device that performs arithmetic operations on numbers.
+                     Basic calculators can do only addition, subtraction, multiplication and division mathematical calculations.</p>
+                     <a target="_blank" href="https://www.techtarget.com/whatis/definition/calculator#:~:text=A%20calculator%20is%20a%20device,multiplication%20and%20division%20mathematical%20calculations."><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-traffic-light"></i>
+                <h2>Traffic Signal</h2>
+                <p>A single stack usually consists of three lights: a green light on the
+                     bottom to indicate the traffic may proceed, a yellow light in the middle to warn 
+                     traffic to slow and prepare to stop, and a red light on the top to indicate the traffic must stop.</p>
+                     <a target="_blank" href="https://www.encyclopedia.com/manufacturing/news-wires-white-papers-and-books/traffic-signal#:~:text=A%20single%20stack%20usually%20consists,indicate%20the%20traffic%20must%20stop."><i class="fa-solid fa-arrow-right"></i></a>
+                    
+            </div>
+
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Ludo King</h2>
+                <p>Ludo King is the modern version of the royal game of Parchisi, 
+                    a game played between Indian kings and queens in ancient times. 
+                    Roll the dice to play and move your tokens to reach the center of the board. Beat the other players to become the Ludo King.</p>
+                    <a target="_blank" href="https://startuptalky.com/success-story-ludo-king/"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="cont-left">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" id="btn2"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                <div class="cont-right">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <h1 id="name"><i class="fa-regular fa-user"></i> Omkar Ipte</h1>
+                    <p><i class="fa-solid fa-envelope"></i> omkar123@mail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0123-456-789</p>
+                    <a target="_blank" href="Images/Resume.pdf" download class="btn">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>
+
+    <div class="footer">
+        <div class="social">
+            <a target="_blank" href="https://www.linkedin.com/home"><i class="fa-brands fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <p>Copyright &#169; omkarsportfolio.com | All rights reserved.</p>
+    </div>
+    
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer','Graphic Designer','Web Developer'],
+            typeSpeed: 50,
+          });
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz_a1E6gsEwwA370mnvbsaZqpH390OFXMl9vyPGwksCyRpAdYKpnG2zU_aWabJ3sgulsQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+</body>
+</html>
