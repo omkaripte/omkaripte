@@ -14,6 +14,7 @@ html {
     box-sizing: border-box;
 }
 
+/* ------------------Home Section-------------------- */
 #header {
     width: 100%;
     height: 100vh;
@@ -101,20 +102,12 @@ nav ul li a:hover::after {
     cursor: pointer;
     background:#ae00ae;
 }
-
-/* .headertext:hover {
-    filter: drop-shadow(5px 5px 5px blueviolet);
-    transform: translateY(-5px);
-} */
  
 .headertext h1 span{
     color: #ff9000;
 }
 
-
-
-/* ----------About Section--------*/
-
+/* -----------------About Section----------------*/
 #about {
     padding: 80px 0;
     color: white;
@@ -187,9 +180,7 @@ nav ul li a:hover::after {
     display: block;
 }
 
-
-/* project section */
-
+/*---------------Project Section-------------- */
 #project {
     padding: 30px 0;
 }
@@ -256,8 +247,7 @@ nav ul li a:hover::after {
     opacity: 100%;
 }
 
-/*------Contact-------*/
-
+/*--------------Contact Section--------------*/
 .row {
     margin-top: 150px;
 }
@@ -346,6 +336,7 @@ form i {
     color: white;
 }
 
+/*--------------Footer Section--------------*/
 .footer {
     width: 100%;
     text-align: center;
@@ -392,7 +383,7 @@ nav .menu {
     display: block;
 }
 
-/* small screen*/
+/*--------------For Responsive Website (Small Screen)-----------------*/
 
 @media only screen and (max-width: 700px) {
     #header {
@@ -461,5 +452,5 @@ nav .menu {
     .social {
         margin-bottom: 0;
     }
-    
 }
+
