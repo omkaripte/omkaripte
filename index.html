@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+
+    <!-- ---------For Tab Icon---------------->
     <link rel="icon" type="png" href="Images/user-3296.png">
     <link rel="stylesheet" href="style.css">
 
-    <!-- ---------External JavaScript------- -->
-    <script src="script.js"></script> 
+    <!---------Typed.js function for text animation-------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <!-- ---For Send Button of Form-- -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
-
-    <!-- --------For all acons---------- -->
+    <!-- --------For all icons---------- -->
     <script src="https://kit.fontawesome.com/8ce0bceac7.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+
+<!-- -----------Home Section---------- -->
 
     <div id="header">
         <div class="container">
@@ -44,6 +46,7 @@
     </div>
 
 
+<!-- ------------About Section----------- -->
     
     <div id="about">
         <div class="container">
@@ -94,6 +97,9 @@
         </div>
     </div>
 
+
+<!-- ------------Project Section-----------   -->
+
     <div id="project">
         <div class="container">
             <h1 class="subtitle">My Projects</h1>
@@ -128,11 +134,16 @@
         </div>
     </div>
 
+
+<!-- -----------Contact Section---------- -->
+
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="cont-left">
-                    <form name="submit-to-google-sheet">
+                                 <!-- Receive contact details on Email -->
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                            <input type="hidden" name="access_key" value="7eb1448d-3e13-4aae-9b51-4a4cf29f66df"> 
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
@@ -153,6 +164,9 @@
     <div>
     </div>
 
+
+<!-- ----------Footer Section--------- -->
+
     <div class="footer">
         <div class="social">
             <a target="_blank" href="https://www.linkedin.com/home"><i class="fa-brands fa-linkedin"></i></a>
@@ -162,31 +176,9 @@
         </div>
         <p>Copyright &#169; omkarsportfolio.com | All rights reserved.</p>
     </div>
-    
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Designer','Graphic Designer','Web Developer'],
-            typeSpeed: 50,
-          });
-    </script>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz_a1E6gsEwwA370mnvbsaZqpH390OFXMl9vyPGwksCyRpAdYKpnG2zU_aWabJ3sgulsQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully."
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-    </script>
+<!-- ---------External JavaScript------- -->
+ <script src="script.js"></script>
+    
 </body>
 </html>
