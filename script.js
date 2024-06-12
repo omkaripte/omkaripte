@@ -35,6 +35,16 @@
             sidemenu.style.right = "-200px";
         }
 
+// ---------Back to Top---------------//
+
+        const Top = document.querySelector(".top");
+        window.addEventListener("scroll" ,() => {
+            if(window.pageYOffset > 100){
+                Top.classList.add("active")
+            }else{
+                Top.classList.remove("active")
+            }
+        })
 
 // ----------For Reset Form after sending details (Contact Section)----------//
 
