@@ -1,5 +1,5 @@
-[Personal Portfolio Website 👤❤️](https://omkaripte.github.io/omkaripte/)
-Personal Portfolio Website
+# [Personal Portfolio Website 👤❤️](https://omkaripte.github.io/omkaripte/)
+# [Expense Tracker Web Application 💲💹](https://omkaripte.github.io/Eazybyts02/)
 
 <!--
 **omkaripte/omkaripte** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
