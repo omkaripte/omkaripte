@@ -2,6 +2,8 @@
 
 [Expense Tracker Web Application 💲💹](https://omkaripte.github.io/Eazybyts02/)
 
+[Social Media Dashboard 🌐👍🏻🩷](https://omkaripte.github.io/EazyByts03/)
+
 <!--
 **omkaripte/omkaripte** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
