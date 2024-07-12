@@ -1,4 +1,4 @@
-[Personal Portfolio Website 👤❤️](https://omkaripte.github.io/omkaripte/)
+[Personal Portfolio Website 👤❤️](https://omkaripte.github.io/EazyByts/)
 
 [Expense Tracker Web Application 💲💹](https://omkaripte.github.io/Eazybyts02/)
 
